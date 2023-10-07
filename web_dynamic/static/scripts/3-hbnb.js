@@ -4,8 +4,7 @@ $(document).ready(function () {
     getPlaces();
 });
 
-const host = 'http://0.0.0.0:5001'
-// const host = 'http://127.0.0.1:5001';
+const host = 'http://' + window.location.hostname + ':5001'
 
 function getAmenities() {
     const selectedAmenities = {};
