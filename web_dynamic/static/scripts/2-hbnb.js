@@ -3,7 +3,7 @@ $(document).ready(function () {
   getApiStatus();
 });
 
-const host = 'http://' + window.location.hostname + ':5001'
+const host = 'http://' + window.location.hostname + ':5001';
 
 function getAmenities () {
   const selectedAmenities = {};
@@ -29,7 +29,7 @@ function getAmenities () {
 
 function getApiStatus () {
   // the api endpoint
-  const url = host +'/api/v1/status';
+  const url = host + '/api/v1/status';
 
   // get request to determine status of the api
   $.get(url, (data, textStatus) => {
